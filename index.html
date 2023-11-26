@@ -1,12 +1,170 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Каталог</title>
+</head>
+<body>
+  <header class="main-header">
+    <a class="main-header__logo" href="#">
+      <img src="img/logo.svg" alt="Логотип сайта поиска гостиниц Седона.">
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">О Седоне</a>
+        </li>
+        <li>
+          <a href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+      <button type="submit">
+            <span class="visually-hidden">Хочу сюда!</span>
+      </button>
+    </nav>
+  </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+  <main>
+    <img src="#" alt="Добро пожаловать в Седону.">
+    <h1>Гостиницы Седоны</h1>
+    <legend class="form__legend form__legend--impression">Инфраструктура:</legend>
+    <label class="form__selector-label">
+      <input class="form__selector form__selector--radio visually-hidden" type="checkbox" name="radio" value="positive" checked="">
+      <span class="form__selector-text">Бассейн</span>
+    </label>
+    <label class="form__selector-label">
+      <input class="form__selector form__selector--radio visually-hidden" type="checkbox" name="radio" value="positive">
+      <span class="form__selector-text">Парковка</span>
+    </label>
+    <label class="form__selector-label">
+      <input class="form__selector form__selector--radio visually-hidden" type="checkbox" name="radio" value="neutral">
+      <span class="form__selector-text">Wi-Fi</span>
+    </label>
 
-  </body>
+    <legend class="form__legend form__legend--impression">Тип жилья:</legend>
+    <label class="form__selector-label">
+      <input class="visually-hidden" type="radio" name="radio" value="positive" checked="">
+      <span class="form__selector-text">Гостиница</span>
+    </label>
+    <label class="form__selector-label">
+      <input class="visually-hidden" type="radio" name="radio" value="negative">
+      <span class="form__selector-text">Мотель</span>
+    </label>
+    <label class="form__selector-label">
+      <input class="visually-hidden" type="radio" name="radio" value="neutral">
+      <span class="form__selector-text">Апартаменты</span>
+    </label>
+    <p>Стоимость, Р:</p>
+    <div><p>От:</p> <input class="field" placeholder="От" type="number" name="price" value="0" required></div>
+    <p>До:</p> <input class="field" placeholder="До" type="number" name="price" value="9000" required>
+
+    <button type="submit">
+            <span class="visually-hidden">Применить</span>
+      </button>
+    <button type="submit">
+            <span class="visually-hidden">Сбросить</span>
+      </button>
+
+    <h1>Найдено гостиниц: 38</h1>
+    <select>
+      <option>Сначала дешёвые</option>
+      <option>Сначала дорогие</option>
+      <option>Сначала с лучшей оценкой</option>
+    </select>
+
+    <fieldset>
+    <img src="#" alt="Amara Resort & Spa">
+    <h5>Amara Resort & Spa</h5>
+    <p>Гостиница    От 4000 Р</p>
+    <button type="submit">
+            <span class="visually-hidden">Подробнее</span>
+      </button>
+    <button type="submit">
+            <span class="visually-hidden">В избранное</span>
+      </button>
+    <p>Рейтинг: 8,5</p>
+    </fieldset>
+    <fieldset>
+    <img src="#" alt="Villas at Poco Diablo">
+    <h5>Villas at Poco Diablo</h5>
+    <p>Гостиница    От 5000 Р</p>
+    <button type="submit">
+            <span class="visually-hidden">Подробнее</span>
+      </button>
+    <button type="submit">
+            <span class="visually-hidden">В избранном</span>
+      </button>
+    <p>Рейтинг: 9,2</p>
+    </fieldset>
+    <fieldset>
+    <img src="#" alt="Desert Quail Inn">
+    <h5>Desert Quail Inn</h5>
+    <p>Гостиница    От 2500 Р</p>
+    <button type="submit">
+            <span class="visually-hidden">Подробнее</span>
+      </button>
+    <button type="submit">
+            <span class="visually-hidden">В избранное</span>
+      </button>
+    <p>Рейтинг: 6,9</p>
+    </fieldset>
+    <fieldset>
+    <img src="#" alt="GreenTree Inn">
+    <h5>GreenTree Inn</h5>
+    <p>Гостиница    От 1500 Р</p>
+    <button type="submit">
+            <span class="visually-hidden">Подробнее</span>
+      </button>
+    <button type="submit">
+            <span class="visually-hidden">В избранное</span>
+      </button>
+    <p>Рейтинг: 5,0</p>
+    </fieldset>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <section>
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+                 required>
+          <button class="button newsletter-button" type="submit">
+            <span class="visually-hidden">Подписаться</span>
+          </button>
+        </form>
+      </section>
+      <section class="main-footer__social social">
+        <h2 class="visually-hidden">Контакты</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link" href="#">
+          <span class="visually-hidden">.html academy</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
