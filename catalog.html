@@ -7,7 +7,7 @@
 <body>
   <header class="main-header">
     <a class="main-header__logo" href="#">
-      <img src="img/logo.svg" alt="Логотип сайта поиска гостиниц Седона.">
+      <img src="images/logo-sedona.svg" alt="Логотип сайта поиска гостиниц Седона.">
     </a>
     <nav>
       <ul>
@@ -28,11 +28,11 @@
   </header>
 
   <main>
-    <img src="#" alt="Добро пожаловать в Седону.">
+    <img src="images/index-background.jpg" alt="Добро пожаловать в Седону.">
     <h1>Гостиницы Седоны</h1>
-    <legend>Инфраструктура:</legend>
-    <label>
-      <input class="visually-hidden" type="checkbox" name="radio" value="positive" checked="">
+    <legend class="form__legend form__legend--impression">Инфраструктура:</legend>
+    <label class="form__selector-label">
+      <input class="form__selector form__selector--radio visually-hidden" type="checkbox" name="radio" value="positive" checked="">
       <span class="form__selector-text">Бассейн</span>
     </label>
     <label class="form__selector-label">
@@ -44,8 +44,8 @@
       <span class="form__selector-text">Wi-Fi</span>
     </label>
 
-    <legend>Тип жилья:</legend>
-    <label>
+    <legend class="form__legend form__legend--impression">Тип жилья:</legend>
+    <label class="form__selector-label">
       <input class="visually-hidden" type="radio" name="radio" value="positive" checked="">
       <span class="form__selector-text">Гостиница</span>
     </label>
@@ -55,7 +55,7 @@
     </label>
     <label class="form__selector-label">
       <input class="visually-hidden" type="radio" name="radio" value="neutral">
-      <span>Апартаменты</span>
+      <span class="form__selector-text">Апартаменты</span>
     </label>
     <p>Стоимость, Р:</p>
     <div><p>От:</p> <input class="field" placeholder="От" type="number" name="price" value="0" required></div>
@@ -76,7 +76,7 @@
     </select>
 
     <fieldset>
-    <img src="#" alt="Amara Resort & Spa">
+    <img src="images/hotel-1.jpg" alt="Amara Resort & Spa">
     <h5>Amara Resort & Spa</h5>
     <p>Гостиница    От 4000 Р</p>
     <button type="submit">
@@ -88,7 +88,7 @@
     <p>Рейтинг: 8,5</p>
     </fieldset>
     <fieldset>
-    <img src="#" alt="Villas at Poco Diablo">
+    <img src="images/hotel-2.jpg" alt="Villas at Poco Diablo">
     <h5>Villas at Poco Diablo</h5>
     <p>Гостиница    От 5000 Р</p>
     <button type="submit">
@@ -100,7 +100,7 @@
     <p>Рейтинг: 9,2</p>
     </fieldset>
     <fieldset>
-    <img src="#" alt="Desert Quail Inn">
+    <img src="images/hotel-3.jpg" alt="Desert Quail Inn">
     <h5>Desert Quail Inn</h5>
     <p>Гостиница    От 2500 Р</p>
     <button type="submit">
@@ -112,7 +112,7 @@
     <p>Рейтинг: 6,9</p>
     </fieldset>
     <fieldset>
-    <img src="#" alt="GreenTree Inn">
+    <img src="images/hotel-4.jpg" alt="GreenTree Inn">
     <h5>GreenTree Inn</h5>
     <p>Гостиница    От 1500 Р</p>
     <button type="submit">
@@ -139,31 +139,30 @@
           </button>
         </form>
       </section>
-      <section>
+      <section class="main-footer__social social">
         <h2 class="visually-hidden">Контакты</h2>
-        <ul>
-          <li>
-            <a href="#">
-              <span class="visually-hidden">Вконтакте</span>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="images/Vector-5.svg" alt="Вконтакте">
             </a>
           </li>
-          <li>
-            <a href="#">
-              <span class="visually-hidden">Телеграм</span>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="images/Vector-6.svg" alt="Телеграм">
             </a>
           </li>
-          <li>
-            <a href="#">
-              <span class="visually-hidden">Ютуб</span>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="images/Vector-7.svg" alt="Ютуб">
             </a>
           </li>
         </ul>
       </section>
-      <div>
-        <a href="#">
-          <span class="visually-hidden">.html academy</span>
+      <h2>+7 (812) 812-12-12</h2>
+        <a class="copyright__link" href="#">
+          <img src="images/HTML%20Academy.svg" alt=".html academy">
         </a>
-      </div>
     </div>
   </footer>
 </body>
