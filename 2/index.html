@@ -2,13 +2,13 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Каталог</title>
+  <title>Седона</title>
   <base href="https://htmlacademy-univer-htmlcss-1.github.io/2431071-sedona-2/2/">
 </head>
 <body>
   <header class="main-header">
     <a class="main-header__logo" href="#">
-      <img src="img/logo.svg" alt="Логотип сайта поиска гостиниц Седона.">
+      <img src="images/logo-sedona.svg" alt="Логотип сайта поиска гостиниц Седона.">
     </a>
     <nav>
       <ul>
@@ -22,114 +22,97 @@
           <a href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <button type="submit">
+      <button class="button newsletter-button" type="submit">
             <span class="visually-hidden">Хочу сюда!</span>
-      </button>
+          </button>
     </nav>
   </header>
 
   <main>
-    <img src="#" alt="Добро пожаловать в Седону.">
-    <h1>Гостиницы Седоны</h1>
-    <legend class="form__legend form__legend--impression">Инфраструктура:</legend>
-    <label class="form__selector-label">
-      <input class="form__selector form__selector--radio visually-hidden" type="checkbox" name="radio" value="positive" checked="">
-      <span class="form__selector-text">Бассейн</span>
-    </label>
-    <label class="form__selector-label">
-      <input class="form__selector form__selector--radio visually-hidden" type="checkbox" name="radio" value="positive">
-      <span class="form__selector-text">Парковка</span>
-    </label>
-    <label class="form__selector-label">
-      <input class="form__selector form__selector--radio visually-hidden" type="checkbox" name="radio" value="neutral">
-      <span class="form__selector-text">Wi-Fi</span>
-    </label>
-
-    <legend class="form__legend form__legend--impression">Тип жилья:</legend>
-    <label class="form__selector-label">
-      <input class="visually-hidden" type="radio" name="radio" value="positive" checked="">
-      <span class="form__selector-text">Гостиница</span>
-    </label>
-    <label class="form__selector-label">
-      <input class="visually-hidden" type="radio" name="radio" value="negative">
-      <span class="form__selector-text">Мотель</span>
-    </label>
-    <label class="form__selector-label">
-      <input class="visually-hidden" type="radio" name="radio" value="neutral">
-      <span class="form__selector-text">Апартаменты</span>
-    </label>
-    <p>Стоимость, Р:</p>
-    <div><p>От:</p> <input class="field" placeholder="От" type="number" name="price" value="0" required></div>
-    <p>До:</p> <input class="field" placeholder="До" type="number" name="price" value="9000" required>
-
-    <button type="submit">
-            <span class="visually-hidden">Применить</span>
-      </button>
-    <button type="submit">
-            <span class="visually-hidden">Сбросить</span>
-      </button>
-
-    <h1>Найдено гостиниц: 38</h1>
-    <select>
-      <option>Сначала дешёвые</option>
-      <option>Сначала дорогие</option>
-      <option>Сначала с лучшей оценкой</option>
-    </select>
-
-    <fieldset>
-    <img src="#" alt="Amara Resort & Spa">
-    <h5>Amara Resort & Spa</h5>
-    <p>Гостиница    От 4000 Р</p>
-    <button type="submit">
-            <span class="visually-hidden">Подробнее</span>
-      </button>
-    <button type="submit">
-            <span class="visually-hidden">В избранное</span>
-      </button>
-    <p>Рейтинг: 8,5</p>
-    </fieldset>
-    <fieldset>
-    <img src="#" alt="Villas at Poco Diablo">
-    <h5>Villas at Poco Diablo</h5>
-    <p>Гостиница    От 5000 Р</p>
-    <button type="submit">
-            <span class="visually-hidden">Подробнее</span>
-      </button>
-    <button type="submit">
-            <span class="visually-hidden">В избранном</span>
-      </button>
-    <p>Рейтинг: 9,2</p>
-    </fieldset>
-    <fieldset>
-    <img src="#" alt="Desert Quail Inn">
-    <h5>Desert Quail Inn</h5>
-    <p>Гостиница    От 2500 Р</p>
-    <button type="submit">
-            <span class="visually-hidden">Подробнее</span>
-      </button>
-    <button type="submit">
-            <span class="visually-hidden">В избранное</span>
-      </button>
-    <p>Рейтинг: 6,9</p>
-    </fieldset>
-    <fieldset>
-    <img src="#" alt="GreenTree Inn">
-    <h5>GreenTree Inn</h5>
-    <p>Гостиница    От 1500 Р</p>
-    <button type="submit">
-            <span class="visually-hidden">Подробнее</span>
-      </button>
-    <button type="submit">
-            <span class="visually-hidden">В избранное</span>
-      </button>
-    <p>Рейтинг: 5,0</p>
-    </fieldset>
+    <header class="main-index__header hero-index">
+      <img src="images/welcome.svg" alt="Welcome to the gorgeus Sedona">
+      <h3 class="visually-hidden">Because the Grand Canyon sucks</h3>
+      <img src="images/index-background.jpg" alt="Добро пожаловать в Седону.">
+      <img src="images/divider.png" alt="divider">
+    </header>
+    <section class="advantages">
+      <p class="advantages__slogan">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+      <p class="advantages__intro">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      <ul class="advantages__list">
+        <li class="advantages__item advantage-main advantages__item--first">
+          <div class="advantage-main__card-wrapper">
+            <h3>Настоящий<br> городок</h3>
+            <p class="advantage-main__description">Седона не аттракцион для туристов,<br> там течет своя жизнь</p>
+          </div>
+          <img src="images/photo-1.jpg" alt="Городок">
+          <ul class="benefits">
+            <li>
+              <div class="benefit-card__wrapper">
+                <h3 class="benefit-card__title benefit-card__title--first-icon">Жилье</h3>
+                <p class="benefit-card__description">Рекомендуем пожить в настоящем<br>
+                  мотеле, все как в кино!</p>
+              </div>
+            </li>
+            <li>
+              <div class="benefit-card__wrapper">
+                <h3 class="benefit-card__title benefit-card__title--second-icon">Еда</h3>
+                <p class="benefit-card__description">Всегда заказывайте топовый фирменный бургер, вы не
+                  разочаруетесь!</p>
+              </div>
+            </li>
+            <li>
+              <div class="benefit-card__wrapper">
+                <h3 class="benefit-card__title benefit-card__title--third-icon">Сувениры</h3>
+                <p class="benefit-card__description">Не только китайского,<br> но и настоящего местного производства!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="advantages__item advantage-main advantages__item--second">
+          <div class="advantage-main__card-wrapper advantage-main__card-wrapper--change-order">
+            <img src="images/photo-2.jpg" alt="Мост">
+            <h3>Там есть<br> мост дьявола</h3>
+            <p class="advantage-main__description">Да, по нему можно пройти!<br>
+              Если вы осмелитесь, <br> разумеется</p>
+          </div>
+            <h2>Приезжайте в Седону отдохнуть <br> в комфорте и уюте</h2>
+            <p>Опытный персонал и качественное обслуживание</p>
+        </li>
+        <li class="advantages__item advantage-additional advantages__item--underline advantages__item--third">
+          <div class="advantage-additional__wrapper">
+            <h3 class="advantage-additional__title">Небольшая<br> площадь</h3>
+            <p class="advantage-additional__description">Все достопримечательности<br> находятся очень<br
+            > близко</p>
+          </div>
+        </li>
+        <li class="advantages__item advantage-additional advantages__item--underline advantages__item--fourth">
+          <div class="advantage-additional__wrapper advantage-additional__wrapper--diff">
+            <h3 class="advantage-additional__title">Красивая<br> дорога</h3>
+            <p class="advantage-additional__description">Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+          </div>
+        </li>
+        <li class="advantages__item advantage-additional advantages__item--fifth">
+          <div class="advantage-additional__wrapper">
+            <h3 class="advantage-additional__title">Мало<br> туристов</h3>
+            <p class="advantage-additional__description">Большинство едет в Гранд Каньон и<br
+            > толпится там</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="find">
+      <h2 class="find__title">Заинтересовались?</h2>
+      <p class="find__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
+        в Седоне</p>
+      <button><p>Поиск гостиницы в Седоне</p></button>
+    </section>
 
   </main>
-
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <section>
+        <img src="images/Subscribe.png" alt="Рассылка">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -145,26 +128,25 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="#">
-              <span class="visually-hidden">Вконтакте</span>
+              <img src="images/Vector-5.svg" alt="Вконтакте">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <span class="visually-hidden">Телеграм</span>
+              <img src="images/Vector-6.svg" alt="Телеграм">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <span class="visually-hidden">Ютуб</span>
+              <img src="images/Vector-7.svg" alt="Ютуб">
             </a>
           </li>
         </ul>
       </section>
-      <div class="main-footer__copyright copyright">
+      <h2>+7 (812) 812-12-12</h2>
         <a class="copyright__link" href="#">
-          <span class="visually-hidden">.html academy</span>
+          <img src="images/HTML%20Academy.svg" alt=".html academy">
         </a>
-      </div>
     </div>
   </footer>
 </body>
